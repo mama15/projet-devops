@@ -44,7 +44,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                    cd ${TERRA_DIR}
+                    cd "/home/thioro-thiam/Documents/ligne-rouge/terraform"
                     terraform init
                     terraform plan
                     terraform apply --auto-approve
