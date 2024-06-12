@@ -7,7 +7,7 @@ pipeline {
         registryCredential = 'docker-credentiel'
         KUBECONFIG = "/home/thioro-thiam/.kube/config"
         TERRA_DIR  = "/home/thioro-thiam/Documents/ligne-rouge/terraform"
-        ANSIBLE_DIR = "/home/thioro-thiam/Documents/ligne-rouge/ansible"
+        ANSIBLE_DIR = "var/jenkins_home/workspace/projet-devops/ansible"
     }
     agent any
     stages {
