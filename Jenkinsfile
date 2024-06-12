@@ -7,7 +7,7 @@ pipeline {
         registryCredential = 'docker-credentiel'
         KUBECONFIG = "/home/thioro-thiam/.kube/config"
         TERRA_DIR  = "/home/thioro-thiam/Documents/ligne-rouge/terraform"
-        ANSIBLE_DIR = "var/jenkins_home/workspace/projet-devops/ansible"
+        ANSIBLE_DIR = "home/jenkins_home/workspace/projet-devops/ansible"
     }
     agent any
     stages {
@@ -44,7 +44,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                    cd "/var/jenkins_home/workspace/projet-devops/terraform"
+                    cd "/home/jenkins_home/workspace/projet-devops/terraform"
                     terraform init
                     terraform plan
                     terraform apply --auto-approve
