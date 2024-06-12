@@ -44,7 +44,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                    cd "/home/thioro-thiam/Documents/ligne-rouge/terraform"
+                    cd "/var/jenkins_home/workspace/projet-devops/terraform"
                     terraform init
                     terraform plan
                     terraform apply --auto-approve
