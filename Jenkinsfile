@@ -45,7 +45,7 @@ pipeline {
                 script {
                     sh """
                     cd ${TERRA_DIR}
-                    terraform init
+                    /usr/bin/terraform init
                     terraform plan
                     terraform apply --auto-approve
                     """
